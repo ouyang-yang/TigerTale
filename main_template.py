@@ -1,7 +1,7 @@
 from linebot.models import FlexSendMessage
 def main_panel_flex():
     flex_message = FlexSendMessage(
-                    alt_text='選擇縣市',
+                    alt_text='推薦餐廳/景點',
                     contents= {
                                 "type": "bubble",
                                 "hero": {
