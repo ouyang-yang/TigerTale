@@ -44,7 +44,7 @@ def test1(event):
     if user_id == '':
         user_id = event.source.user_id
 
-    # ----------------實用小功能-----------------
-    if event.message.text == "實用小功能":
-        flex_message0 = flex_template.main_panel_flex()
+    # ----------------推薦餐廳/景點-----------------
+    if event.message.text == "推薦餐廳/景點":
+        flex_message0 = main_template.main_panel_flex()
         line_bot_api.reply_message(event.reply_token, flex_message0)    
