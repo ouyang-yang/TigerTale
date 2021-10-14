@@ -36,7 +36,7 @@ def main_panel_flex():
                                     },
                                     {
                                       "type": "box",
-                                      "layout": "vertical",
+                                      "layout": "horizontal",
                                       "contents": [
                                         {
                                           "type": "button",
