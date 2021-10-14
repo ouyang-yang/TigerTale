@@ -44,7 +44,51 @@ def test1(event):
     if user_id == '':
         user_id = event.source.user_id
 
+    # --------------------點餐---------------------
+    if event.message.text == "點餐":
+        line_bot_api.reply_message(
+            event.reply_token, 
+            TextSendMessage(
+                text='沿用並優化「招財虎玩數位」點餐系統')
+        )        
+
     # ----------------推薦餐廳/景點-----------------
-    if event.message.text == "推薦餐廳/景點":
+    elif event.message.text == "推薦餐廳/景點":
         flex_message0 = main_template.main_panel_flex()
         line_bot_api.reply_message(event.reply_token, flex_message0)    
+
+    # ----------------優惠專區-----------------
+    elif event.message.text == "優惠專區":
+        line_bot_api.reply_message(
+            event.reply_token, 
+            TextSendMessage(
+                text='優惠券&集點卡')
+        )
+
+    # ----------------我的訂單/預約查詢-----------------
+    elif event.message.text == "我的訂單/預約查詢":
+        line_bot_api.reply_message(
+            event.reply_token, 
+            TextSendMessage(
+                text='提供訂單與預約查詢服務')
+        )
+
+    # ----------------找老虎！-----------------
+    elif event.message.text == "找老虎！":
+        line_bot_api.reply_message(
+            event.reply_token, 
+            TextSendMessage(
+                text='交由有老虎燈箱的店家進行集點認證')
+        )      
+
+     # ----------------主題地圖-----------------
+    elif event.message.text == "主題地圖":
+        line_bot_api.reply_message(
+            event.reply_token, 
+            TextSendMessage(
+                text='利用LIFF跳出做好標記的地圖')
+        )          
+                     
+
+if __name__ == "__main__":
+    app.run(debug=True)                    

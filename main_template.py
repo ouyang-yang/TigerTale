@@ -6,7 +6,7 @@ def main_panel_flex():
                                 "type": "bubble",
                                 "hero": {
                                   "type": "image",
-                                  "url": "", # 放張照片ㄅ
+                                  "url": "https://github.com/ouyang-yang/TigerTale/blob/master/images/推.png?raw=true", # 放張照片ㄅ
                                   "size": "full",
                                   "aspectRatio": "20:13",
                                   "aspectMode": "cover",
@@ -36,61 +36,37 @@ def main_panel_flex():
                                     },
                                     {
                                       "type": "box",
-                                      "layout": "horizontal",
+                                      "layout": "vertical",
                                       "contents": [
                                         {
                                           "type": "button",
                                           "action": {
                                             "type": "message",
-                                            "label": "北部",
-                                            "text": "北部"
+                                            "label": "找景點",
+                                            "text": "找景點"
                                           },
                                           "style": "primary",
                                           "height": "sm",
                                           "color": "#806408"
-                                        },
-                                        {
-                                          "type": "button",
-                                          "action": {
-                                            "type": "message",
-                                            "label": "中部",
-                                            "text": "中部"
-                                          },
-                                          "style": "primary",
-                                          "margin": "xxl",
-                                          "height": "sm",
-                                          "color": "#806408"
-                                        }
+                                        },                                
                                       ],
                                       "margin": "lg"
                                     },
                                     {
                                       "type": "box",
-                                      "layout": "horizontal",
+                                      "layout": "verticle",
                                       "contents": [
                                         {
                                           "type": "button",
                                           "action": {
                                             "type": "message",
-                                            "label": "南部",
-                                            "text": "南部"
+                                            "label": "找美食",
+                                            "text": "找美食"
                                           },
                                           "style": "primary",
                                           "height": "sm",
                                           "color": "#806408"
                                         },
-                                        {
-                                          "type": "button",
-                                          "action": {
-                                            "type": "message",
-                                            "label": "東部",
-                                            "text": "東部"
-                                          },
-                                          "style": "primary",
-                                          "margin": "xxl",
-                                          "height": "sm",
-                                          "color": "#806408"
-                                        }
                                       ],
                                       "margin": "md"
                                     }
