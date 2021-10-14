@@ -26,7 +26,7 @@ def main_panel_flex():
                                     },
                                     {
                                       "type": "text",
-                                      "text": "ＲＲＲＲＲＲＲ",
+                                      "text": "RRRRRRR",
                                       "size": "xs",
                                       "margin": "sm"
                                     },
