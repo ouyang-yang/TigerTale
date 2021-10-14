@@ -1,7 +1,12 @@
+# 載入需要的模組
+from __future__ import unicode_literals
 from linebot import LineBotApi, WebhookHandler, WebhookParser
 from linebot.exceptions import InvalidSignatureError, LineBotApiError
 from linebot.models import MessageEvent, TextMessage, TextSendMessage
 from linebot.models import *
+import json
+import main_template
+from flask import Flask, request, abort
 
 app = Flask(__name__)
 
@@ -19,7 +24,7 @@ handler = WebhookHandler('4ddc0271caebe33ad9f47cdc1c8d0c1b')
 # 打個招呼 :)
 @app.route("/", methods=['GET'])
 def hello():
-    return "Hi! Wanna find some InTeREsTInG books?"
+    return "Hi!"
 
 # 接收 LINE 的資訊
 @app.route("/callback", methods=['POST'])
@@ -35,8 +40,6 @@ def callback():
     return 'OK'
 
 # ----------------設定回覆訊息介面-----------------
-
-
 @handler.add(MessageEvent, message=TextMessage)
 def test1(event):
     # ----------------取得userid-----------------
