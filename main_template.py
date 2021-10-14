@@ -35,34 +35,26 @@ def main_panel_flex():
                                       "margin": "lg"
                                     },
                                     {
-                                      "type": "box",
-                                      "layout": "horizontal",
-                                      "contents": [
-                                        {
-                                          "type": "button",
-                                          "action": {
-                                            "type": "message",
-                                            "label": "找景點",
-                                            "text": "找景點"
-                                          },
-                                          "style": "primary",
-                                          "height": "sm",
-                                          "color": "#806408"
-                                        },
-                                        {
-                                          "type": "button",
-                                          "action": {
-                                            "type": "message",
-                                            "label": "找美食",
-                                            "text": "找美食"
-                                          },
-                                          "style": "primary",
-                                          "margin": "xxl",
-                                          "height": "sm",
-                                          "color": "#806408"
-                                        }
-                                      ],
-                                      "margin": "lg"
+                                      "type": "button",
+                                      "action": {
+                                        "type": "message",
+                                        "label": "找景點",
+                                        "text": "找景點"
+                                      },
+                                      "style": "primary",
+                                      "height": "sm",
+                                      "color": "#806408"
+                                    },
+                                    {
+                                      "type": "button",
+                                      "action": {
+                                        "type": "message",
+                                        "label": "找美食",
+                                        "text": "找美食"
+                                      },
+                                      "style": "primary",
+                                      "height": "sm",
+                                      "color": "#806408"
                                     },
                                     ]                     
                                 }
