@@ -18,7 +18,7 @@ def main_panel_flex():
                                   "contents": [
                                     {
                                       "type": "text",
-                                      "text": "想找哪裡的圖書館呢？",
+                                      "text": "想被推推嗎：）",
                                       "weight": "bold",
                                       "size": "xl",
                                       "contents": [],
@@ -26,7 +26,7 @@ def main_panel_flex():
                                     },
                                     {
                                       "type": "text",
-                                      "text": "請幫助我選擇圖書館在台灣的哪個位置：）",
+                                      "text": "ＲＲＲＲＲＲＲ",
                                       "size": "xs",
                                       "margin": "sm"
                                     },
