@@ -6,7 +6,7 @@ def main_panel_flex():
                                 "type": "bubble",
                                 "hero": {
                                   "type": "image",
-                                  "url": "https://github.com/yulaie1012/MingFindsBooks/blob/master/image/location.png?raw=true",
+                                  "url": "https://github.com/ouyang-yang/TigerTale/blob/master/images/推.png?raw=true",
                                   "size": "full",
                                   "aspectRatio": "20:13",
                                   "aspectMode": "cover",
@@ -18,7 +18,7 @@ def main_panel_flex():
                                   "contents": [
                                     {
                                       "type": "text",
-                                      "text": "想找哪裡的圖書館呢？",
+                                      "text": "在虎尾覺得無聊了嗎？",
                                       "weight": "bold",
                                       "size": "xl",
                                       "contents": [],
@@ -26,7 +26,7 @@ def main_panel_flex():
                                     },
                                     {
                                       "type": "text",
-                                      "text": "請幫助我選擇圖書館在台灣的哪個位置：）",
+                                      "text": "請選擇想要使用的功能：）",
                                       "size": "xs",
                                       "margin": "sm"
                                     },
@@ -36,14 +36,14 @@ def main_panel_flex():
                                     },
                                     {
                                       "type": "box",
-                                      "layout": "horizontal",
+                                      "layout": "vertical",
                                       "contents": [
                                         {
                                           "type": "button",
                                           "action": {
                                             "type": "message",
-                                            "label": "北部",
-                                            "text": "北部"
+                                            "label": "找景點",
+                                            "text": "找景點"
                                           },
                                           "style": "primary",
                                           "height": "sm",
@@ -53,8 +53,8 @@ def main_panel_flex():
                                           "type": "button",
                                           "action": {
                                             "type": "message",
-                                            "label": "中部",
-                                            "text": "中部"
+                                            "label": "找美食",
+                                            "text": "找美食"
                                           },
                                           "style": "primary",
                                           "margin": "xxl",
@@ -64,36 +64,6 @@ def main_panel_flex():
                                       ],
                                       "margin": "lg"
                                     },
-                                    {
-                                      "type": "box",
-                                      "layout": "horizontal",
-                                      "contents": [
-                                        {
-                                          "type": "button",
-                                          "action": {
-                                            "type": "message",
-                                            "label": "南部",
-                                            "text": "南部"
-                                          },
-                                          "style": "primary",
-                                          "height": "sm",
-                                          "color": "#806408"
-                                        },
-                                        {
-                                          "type": "button",
-                                          "action": {
-                                            "type": "message",
-                                            "label": "東部",
-                                            "text": "東部"
-                                          },
-                                          "style": "primary",
-                                          "margin": "xxl",
-                                          "height": "sm",
-                                          "color": "#806408"
-                                        }
-                                      ],
-                                      "margin": "md"
-                                    }
                                     ]                     
                                 }
                     }
