@@ -70,20 +70,21 @@ def main_panel_flex():
     )
     return flex_message
 
-def eat_imagemap_flex():
+def spot_imagemap_flex():
     flex_message = ImagemapSendMessage(
+                      type= "imagemap",
                       base_url='',
-                      alt_text='this is an imagemap',
-                      base_size=BaseSize(height=520, width=520),
+                      alt_text='虎尾景點地圖',
+                      base_size={ width: 1040, height: 1040 },
                       actions=[
                           URIImagemapAction(
-                              link_uri='',
+                              link_uri='https://github.com/ouyang-yang/TigerTale/blob/master/images/%E5%90%88%E5%90%8C%E5%BB%B3%E8%88%8D.jpg?raw=true',
                               area=ImagemapArea(
                                   x=174, y=65, width=707, height=416
                               )
                           ),
                           MessageImagemapAction(
-                              text='hello',
+                              text='測試',
                               area=ImagemapArea(
                                   x=520, y=0, width=520, height=520
                               )
