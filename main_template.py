@@ -1,4 +1,4 @@
-from linebot.models import FlexSendMessage
+from linebot.models import FlexSendMessage, ImagemapSendMessage
 def main_panel_flex():
     flex_message = FlexSendMessage(
                     alt_text='推薦餐廳/景點',
@@ -68,4 +68,26 @@ def main_panel_flex():
                                 }
                     }
     )
+    return flex_message
+
+def eat_imagemap_flex():
+    flex_message = ImagemapSendMessage(
+                      base_url='',
+                      alt_text='this is an imagemap',
+                      base_size=BaseSize(height=520, width=520),
+                      actions=[
+                          URIImagemapAction(
+                              link_uri='',
+                              area=ImagemapArea(
+                                  x=174, y=65, width=707, height=416
+                              )
+                          ),
+                          MessageImagemapAction(
+                              text='hello',
+                              area=ImagemapArea(
+                                  x=520, y=0, width=520, height=520
+                              )
+                          )
+                      ]
+                  )
     return flex_message

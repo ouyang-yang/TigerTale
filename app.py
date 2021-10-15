@@ -61,7 +61,7 @@ def test1(event):
         line_bot_api.reply_message(event.reply_token, flex_message0) 
 
     elif event.message.text == "找美食":
-        flex_message1 = main_template.main_panel_flex()
+        flex_message1 = main_template.eat_imagemap_flex()
         line_bot_api.reply_message(event.reply_token, flex_message1) 
 
     elif event.message.text == "找景點":
