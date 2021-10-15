@@ -73,15 +73,14 @@ def main_panel_flex():
 def spot_imagemap_flex():
     flex_message = ImagemapSendMessage(
                       type= "imagemap",
-                      base_url='',
+                      base_url='https://github.com/ouyang-yang/TigerTale/tree/master/images',
                       alt_text='虎尾景點地圖',
-                      base_size={ width: 1040, height: 1040 },
+                      base_size=base_size(width = 1040, height = 1040),
                       actions=[
                           URIImagemapAction(
-                              link_uri='https://github.com/ouyang-yang/TigerTale/blob/master/images/%E5%90%88%E5%90%8C%E5%BB%B3%E8%88%8D.jpg?raw=true',
+                              link_uri='https://github.com/ouyang-yang/TigerTale/blob/master/images/%E5%90%88%E5%90%8C%E5%BB%B3%E8%88%8D700px.jpg?raw=true',
                               area=ImagemapArea(
-                                  x=174, y=65, width=707, height=416
-                              )
+                                  x=174, y=65, width=707, height=416)
                           ),
                           MessageImagemapAction(
                               text='測試',
