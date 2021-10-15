@@ -72,22 +72,36 @@ def main_panel_flex():
 
 def spot_imagemap_flex():
     flex_message = ImagemapSendMessage(
-                      type= "imagemap",
-                      base_url='https://github.com/ouyang-yang/TigerTale/tree/master/images',
-                      alt_text='虎尾景點地圖',
-                      base_size=base_size(width = 1040, height = 1040),
-                      actions=[
-                          URIImagemapAction(
-                              link_uri='https://github.com/ouyang-yang/TigerTale/blob/master/images/%E5%90%88%E5%90%8C%E5%BB%B3%E8%88%8D700px.jpg?raw=true',
-                              area=ImagemapArea(
-                                  x=174, y=65, width=707, height=416)
-                          ),
-                          MessageImagemapAction(
-                              text='測試',
-                              area=ImagemapArea(
-                                  x=520, y=0, width=520, height=520
-                              )
-                          )
-                      ]
+                      {
+                        "type": "imagemap",
+                        "baseUrl": "https://github.com/ouyang-yang/TigerTale/tree/master/images",
+                        "altText": "虎尾景點地圖",
+                        "baseSize": {
+                            "width": 1040,
+                            "height": 1040
+                        },
+                        "actions": [
+                            {
+                                "type": "uri",
+                                "linkUri": "https://github.com/ouyang-yang/TigerTale/blob/master/images/%E5%90%88%E5%90%8C%E5%BB%B3%E8%88%8D700px.jpg?raw=true",
+                                "area": {
+                                    "x": 0,
+                                    "y": 586,
+                                    "width": 520,
+                                    "height": 454
+                                }
+                            },
+                            {
+                                "type": "message",
+                                "text": "Hello",
+                                "area": {
+                                    "x": 520,
+                                    "y": 586,
+                                    "width": 520,
+                                    "height": 454
+                                }
+                            }
+                        ]
+                      }      
                   )
     return flex_message
