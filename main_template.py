@@ -152,3 +152,84 @@ def order_panel_flex():
                     }
     )
     return flex_message
+
+def find_new_panel_flex():
+  flex_message = FlexSendMessage(
+                  alt_text='找新店家',
+                  contents= {
+                              "type": "bubble",
+                              "body": {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                  {
+                                    "type": "text",
+                                    "text": "想吃什麼類型的食物呢：）",
+                                    "weight": "bold",
+                                    "size": "xl",
+                                    "contents": [],
+                                    "color": "#6e3e1e"
+                                  },
+                                  {
+                                    "type": "separator",
+                                    "margin": "lg"
+                                  },
+                                  {
+                                    "type": "box",
+                                    "layout": "vertical",
+                                    "contents": [
+                                      {
+                                        "type": "button",
+                                        "action": {
+                                          "type": "message",
+                                          "label": "中式",
+                                          "text": "中式"
+                                        },
+                                        "style": "primary",
+                                        "height": "sm",
+                                        "color": "#806408"
+                                      },
+                                      {
+                                        "type": "button",
+                                        "action": {
+                                          "type": "message",
+                                          "label": "異國",
+                                          "text": "異國"
+                                        },
+                                        "style": "primary",
+                                        "margin": "xxl",
+                                        "height": "sm",
+                                        "color": "#806408"
+                                      },
+                                      {
+                                        "type": "button",
+                                        "action": {
+                                          "type": "message",
+                                          "label": "點心",
+                                          "text": "點心"
+                                        },
+                                        "style": "primary",
+                                        "margin": "xxl",
+                                        "height": "sm",
+                                        "color": "#806408"
+                                      },
+                                      {
+                                        "type": "button",
+                                        "action": {
+                                          "type": "message",
+                                          "label": "飲料",
+                                          "text": "飲料"
+                                        },
+                                        "style": "primary",
+                                        "margin": "xxl",
+                                        "height": "sm",
+                                        "color": "#806408"
+                                      }                                        
+                                    ],
+                                    "margin": "lg"
+                                  },
+                                  ]                     
+                              }
+                  }
+  )
+  return flex_message

@@ -50,7 +50,11 @@ def test1(event):
     # --------------------點餐---------------------
     if event.message.text == "點餐":
         flex_message3 = main_template.order_panel_flex()
-        line_bot_api.reply_message(event.reply_token, flex_message3) 
+        line_bot_api.reply_message(event.reply_token, flex_message3)
+
+    elif  event.message.text == "找新店家":
+        flex_message4 = main_template.find_new_panel_flex()
+        line_bot_api.reply_message(event.reply_token, flex_message4)
 
     # ----------------推薦餐廳/景點-----------------
     elif event.message.text == "推薦餐廳/景點":
