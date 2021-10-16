@@ -64,6 +64,13 @@ def test1(event):
         flex_message1 = main_template.spot_imagemap_flex()
         line_bot_api.reply_message(event.reply_token, flex_message1) 
 
+    elif event.message.text == "定位":
+        line_bot_api.reply_message(
+            event.reply_token, 
+            TextSendMessage(
+                text='偷偷分享位置給我，我才能分享附近景點給你喔:)')
+        )        
+
     elif event.message.text == "找美食":
         flex_message2 = main_template.main_panel_flex()
         line_bot_api.reply_message(event.reply_token, flex_message2) 
