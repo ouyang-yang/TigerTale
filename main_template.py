@@ -70,38 +70,85 @@ def main_panel_flex():
     )
     return flex_message
 
-def spot_imagemap_flex():
-    flex_message = ImagemapSendMessage(
-                      {
-                        "type": "imagemap",
-                        "baseUrl": "https://github.com/ouyang-yang/TigerTale/tree/master/images",
-                        "altText": "虎尾景點地圖",
-                        "baseSize": {
-                            "width": 1040,
-                            "height": 1040
-                        },
-                        "actions": [
-                            {
-                                "type": "uri",
-                                "linkUri": "https://github.com/ouyang-yang/TigerTale/blob/master/images/%E5%90%88%E5%90%8C%E5%BB%B3%E8%88%8D700px.jpg?raw=true",
-                                "area": {
-                                    "x": 0,
-                                    "y": 586,
-                                    "width": 520,
-                                    "height": 454
+def order_panel_flex():
+    flex_message = FlexSendMessage(
+                    alt_text='點餐',
+                    contents= {
+                                "type": "bubble",
+                                "hero": {
+                                  "type": "image",
+                                  "url": "https://github.com/ouyang-yang/TigerTale/blob/master/images/%E5%90%83.png?raw=true",
+                                  "size": "full",
+                                  "aspectRatio": "20:13",
+                                  "aspectMode": "cover",
+                                  "position": "relative"
+                                },
+                                "body": {
+                                  "type": "box",
+                                  "layout": "vertical",
+                                  "contents": [
+                                    {
+                                      "type": "text",
+                                      "text": "想吃點什麼呢：）",
+                                      "weight": "bold",
+                                      "size": "xl",
+                                      "contents": [],
+                                      "color": "#6e3e1e"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "text": "RRRRRRR",
+                                      "size": "xs",
+                                      "margin": "sm"
+                                    },
+                                    {
+                                      "type": "separator",
+                                      "margin": "lg"
+                                    },
+                                    {
+                                      "type": "box",
+                                      "layout": "vertical",
+                                      "contents": [
+                                        {
+                                          "type": "button",
+                                          "action": {
+                                            "type": "message",
+                                            "label": "我的最愛",
+                                            "text": "我的最愛"
+                                          },
+                                          "style": "primary",
+                                          "height": "sm",
+                                          "color": "#806408"
+                                        },
+                                        {
+                                          "type": "button",
+                                          "action": {
+                                            "type": "message",
+                                            "label": "直接輸入店家",
+                                            "text": "直接輸入店家"
+                                          },
+                                          "style": "primary",
+                                          "margin": "xxl",
+                                          "height": "sm",
+                                          "color": "#806408"
+                                        },
+                                        {
+                                          "type": "button",
+                                          "action": {
+                                            "type": "message",
+                                            "label": "找新店家",
+                                            "text": "找新店家"
+                                          },
+                                          "style": "primary",
+                                          "margin": "xxl",
+                                          "height": "sm",
+                                          "color": "#806408"
+                                        }                                        
+                                      ],
+                                      "margin": "lg"
+                                    },
+                                    ]                     
                                 }
-                            },
-                            {
-                                "type": "message",
-                                "text": "Hello",
-                                "area": {
-                                    "x": 520,
-                                    "y": 586,
-                                    "width": 520,
-                                    "height": 454
-                                }
-                            }
-                        ]
-                      }      
-                  )
+                    }
+    )
     return flex_message

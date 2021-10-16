@@ -49,11 +49,8 @@ def test1(event):
 
     # --------------------點餐---------------------
     if event.message.text == "點餐":
-        line_bot_api.reply_message(
-            event.reply_token, 
-            TextSendMessage(
-                text='沿用並優化「招財虎玩數位」點餐系統')
-        )        
+        flex_message3 = main_template.order_panel_flex()
+        line_bot_api.reply_message(event.reply_token, flex_message3) 
 
     # ----------------推薦餐廳/景點-----------------
     elif event.message.text == "推薦餐廳/景點":
