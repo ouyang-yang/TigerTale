@@ -233,3 +233,60 @@ def find_new_panel_flex():
                   }
   )
   return flex_message
+
+def check_order_panel_flex():
+  flex_message = FlexSendMessage(
+                  alt_text='我的訂單/預約查詢',
+                  contents= {
+                              "type": "bubble",
+                              "body": {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                  {
+                                    "type": "box",
+                                    "layout": "vertical",
+                                    "contents": [
+                                      {
+                                        "type": "button",
+                                        "action": {
+                                          "type": "message",
+                                          "label": "取消訂單",
+                                          "text": "取消訂單"
+                                        },
+                                        "style": "primary",
+                                        "height": "sm",
+                                        "color": "#806408"
+                                      },
+                                      {
+                                        "type": "button",
+                                        "action": {
+                                          "type": "message",
+                                          "label": "查看訂單",
+                                          "text": "查看訂單"
+                                        },
+                                        "style": "primary",
+                                        "margin": "xxl",
+                                        "height": "sm",
+                                        "color": "#806408"
+                                      },
+                                      {
+                                        "type": "button",
+                                        "action": {
+                                          "type": "message",
+                                          "label": "定位資訊",
+                                          "text": "定位資訊"
+                                        },
+                                        "style": "primary",
+                                        "margin": "xxl",
+                                        "height": "sm",
+                                        "color": "#806408"
+                                      }                           
+                                    ],
+                                    "margin": "lg"
+                                  },
+                                  ]                     
+                              }
+                  }
+  )
+  return flex_message

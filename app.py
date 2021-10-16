@@ -86,11 +86,8 @@ def test1(event):
 
     # ----------------我的訂單/預約查詢-----------------
     elif event.message.text == "我的訂單/預約查詢":
-        line_bot_api.reply_message(
-            event.reply_token, 
-            TextSendMessage(
-                text='提供訂單與預約查詢服務')
-        )
+        flex_message5 = main_template.check_order_panel_flex()
+        line_bot_api.reply_message(event.reply_token, flex_message5) 
 
     # ----------------找老虎！-----------------
     elif event.message.text == "找老虎！":
