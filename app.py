@@ -91,11 +91,8 @@ def test1(event):
 
     # ----------------找老虎！-----------------
     elif event.message.text == "找老虎！":
-        line_bot_api.reply_message(
-            event.reply_token, 
-            TextSendMessage(
-                text='交由有老虎燈箱的店家進行集點認證')
-        )      
+        flex_message6 = main_template.find_tiger_panel_flex()
+        line_bot_api.reply_message(event.reply_token, flex_message6) 
 
      # ----------------主題地圖-----------------
     elif event.message.text == "主題地圖":
